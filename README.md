@@ -42,3 +42,20 @@
     - with one set of curly brances, you're targeting the `svg` element, as well as any of its descendants.
     - Test that this works by clicking and holding the check mark. The scale and color change should both transition smoothly.
     
+## Part 3: More animation with keyframes
+
+1. Let's animate the `#check-mark` when the `svg` is in an `active` state. Add an `animation` property to the previous rule set.
+
+    - The animation name will be `draw`
+    = Give a duration of `1s`
+    - provide a timing function of `ease-in-out`
+
+2. Define the `draw` animation using two keyframes to represent the start and end of the animation.
+
+    - At the start of the animation, set the `stroke-dasharray` to `500` (if you're curious to see what this does, experiment with lower values like 10 or 25).
+    - Also at the start of the animation, set the `stroke-dashoffset` to `500` (if you want to see what this does, experiment with positive and negative values while stroke-dasharray is set to a small value).
+
+    - At the end of the animation, change the `stroke-dashoffset` to `0`.
+
+    Bonus: Here's an [explanation of the draw animation](https://css-tricks.com/svg-line-animation-works/) if you'd like to dig deeper.
+

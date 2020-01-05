@@ -22,4 +22,15 @@ svg:hover {
 
 svg:active #check-mark {
     stroke: #55D21A;
+    animation: draw 1s ease-in-out;
+}
+
+@keyframes draw {
+    from {
+        stroke-dasharray: 500;
+        stroke-dashoffset: 500;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
 }
