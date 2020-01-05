@@ -10,3 +10,9 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+/* Experiment: */
+/* #check-mark:hover { */
+svg:hover {
+    transform: scale(1.5);
+}
