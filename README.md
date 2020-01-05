@@ -20,3 +20,7 @@
 7. In the `Layers` panel (left sidebar) notice the `vector layer` that was created when you used the `Pen tool`. Double click the text to rename it `check-mark`.
 
 8. With your `check-mark` layer is still selected in the `Layers` panel, take a look at the `Export` panel in the right sidebar. Make sure `SVG` is selected, then click the `...` button and check the box labelled `Include "id" Attribute`. Click `Export check-mark` and save your file in the `src` directory in this repo.
+
+9. Open your new svg file in VS Code and try to guess what each part of the code is doing. (The least obvious parts are `viewBox` and `xmlns`. If you're curious you can look them up, but otherwise **just trust that they're important and leave them alone**).
+
+10. Copy the svg element from your source file into the `index.html` file provided. There are many ways to include SVG files in a project. This copy/paste method is known as "inline svg", meaning we can edit the svg code just like regular HTML (e.g. add classes etc.) and apply CSS to it. With "inline svg", we are no longer dependent on the source file, but it's nice to keep for reference (in case something goes wrong) and for reuse in other projects.
