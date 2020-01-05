@@ -11,10 +11,15 @@ body {
     align-items: center;
 }
 
-svg {
+svg,
+svg * {
     transition: 0.3s ease-out;
 }
 
 svg:hover {
     transform: scale(1.5);
+}
+
+svg:active #check-mark {
+    stroke: #55D21A;
 }

@@ -34,3 +34,11 @@
 3. Target the `hover` state of the `svg` element. Set its `transform` to `scale(1.5)`.  Experiment: See how it looks if you target the `path` element instead (with the id `check-mark` that we exported earlier). This is because the `svg` element has this `viewBox` attribute which is not scaling. This is why we need to target the `svg` element this time.
 
 4. Add a transition to the `svg` so the scaling happens smoothly in **both directions**, and so it feels like the animation responds quickly to user interaction.
+
+5. When your `svg` has an `active` state, target its child with the id `check-mark`. Give it a `stroke` property of `#55D21A`.
+
+6. Update your `transition` ruleset so that:
+    - the same transition applies to a change in any property
+    - with one set of curly brances, you're targeting the `svg` element, as well as any of its descendants.
+    - Test that this works by clicking and holding the check mark. The scale and color change should both transition smoothly.
+    
