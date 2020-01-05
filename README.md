@@ -32,3 +32,5 @@
 2. Use any technique you like to place your checkmark in the center of the viewport (horizontally and vertically)
 
 3. Target the `hover` state of the `svg` element. Set its `transform` to `scale(1.5)`.  Experiment: See how it looks if you target the `path` element instead (with the id `check-mark` that we exported earlier). This is because the `svg` element has this `viewBox` attribute which is not scaling. This is why we need to target the `svg` element this time.
+
+4. Add a transition to the `svg` so the scaling happens smoothly in **both directions**, and so it feels like the animation responds quickly to user interaction.
