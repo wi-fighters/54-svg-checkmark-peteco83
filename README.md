@@ -24,3 +24,9 @@
 9. Open your new svg file in VS Code and try to guess what each part of the code is doing. (The least obvious parts are `viewBox` and `xmlns`. If you're curious you can look them up, but otherwise **just trust that they're important and leave them alone**).
 
 10. Copy the svg element from your source file into the `index.html` file provided. There are many ways to include SVG files in a project. This copy/paste method is known as "inline svg", meaning we can edit the svg code just like regular HTML (e.g. add classes etc.) and apply CSS to it. With "inline svg", we are no longer dependent on the source file, but it's nice to keep for reference (in case something goes wrong) and for reuse in other projects.
+
+## Part 2: Apply styles for different states with CSS pseudo-classes
+
+1. Keep your project open in a browser window and link a new stylesheet to your document.
+
+2. Use any technique you like to place your checkmark in the center of the viewport (horizontally and vertically)
