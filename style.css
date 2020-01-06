@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+}
+
+svg {
+   position: absolute;
+   left: 45vw;
+   top: 30vh; 
+   
+}
+
+svg, svg * {
+    transition: 0.5s;
+}
+
+svg:hover {
+    transform: scale(1.5);
+}
+
+svg:active #check-mark {
+    stroke: #55D21A;
+    animation: draw 1s ease-in-out;
+}
+
+@keyframes draw {
+    0% {
+        stroke-dasharray: 500;
+        stroke-dashoffset: 500;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
